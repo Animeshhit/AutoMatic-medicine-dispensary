@@ -23,9 +23,38 @@ body {
   font-size: 6rem;
   color: rgba(0, 0, 0, 0.3);
   z-index: -1;
-  bottom: 50%;
+  bottom: 125%;
   left: 0%;
 }
 .anotherClass::before {
-  bottom: 68%;
+  bottom: 120%;
+}
+@media (max-width: 768px) {
+  .beforeClass::before {
+    bottom: 6%;
+  }
+  .anotherClass::before {
+    bottom: 45%;
+  }
+}
+
+@media (max-width: 660px) {
+  .beforeClass::before {
+    bottom: 16%;
+  }
+  .anotherClass::before {
+    bottom: 45%;
+  }
+}
+
+@media (max-width: 560px) {
+  .beforeClass::before {
+    bottom: 60%;
+  }
+}
+
+@media (max-width: 350px) {
+  .anotherClass::before {
+    bottom: 75%;
+  }
 }
